@@ -1,0 +1,90 @@
+
+@white: #efefef;
+@grey: #999999;
+@lightGreen: #3e7c00;
+@green: #336600;
+@darkGreen: #295200;
+@lightRed: #ab0000;
+@red: #990000;
+@darkRed: #660000;
+
+#votes {
+	width: 300px;
+}
+
+.hidden {
+	display: none;
+}
+
+a.thumb {
+	background: linear-gradient(@lightGreen 5%, @green 95%);
+	border-radius: 5px;
+	color: @white;
+	display: inline-block;
+	font-size: .8em;
+	height: 32px;
+	margin: 7px 0;
+	text-decoration: none;
+	width: 148px;
+}
+
+a.thumb .img {
+	background: url('../img/thumbs.png') no-repeat;
+	display: inline-block;
+	height: 22px;
+	margin: 5px 11px 5px 11px;
+	vertical-align: middle;
+	width: 22px;
+}
+
+a.thumb .text {
+	width: 60%;
+}
+
+a.thumb .percent {
+	background: @darkGreen;
+	border-radius: 0 5px 5px 0;
+	display: inline-block;
+	float: right;
+	height: 18px;
+	padding: 7px 0;
+	text-align: center;
+	width: 30%;
+}
+
+a.thumb.down {
+	background: linear-gradient(@lightRed 5%, @red 95%);
+}
+
+a.thumb.down .img {
+	background-position: -25px;
+}
+
+a.thumb.down .percent {
+	background: @darkRed;
+}
+
+.count {
+	color: @grey;
+}
+
+.imageSlider img {
+	vertical-align: middle;
+	z-index: -1;
+}
+
+.prev, .next {
+	color: fade(@white, 85%);
+	font-size: 3em;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+}
+
+.prev {
+	margin-left: 5px;
+}
+
+.next {
+	margin-left: -35px;
+}
